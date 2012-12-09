@@ -3,7 +3,9 @@
 <html lang="${session.'org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE'}">
 
 <head>
-	<title><g:layoutTitle default="${meta(name:'app.name')}" /></title>
+	<title>
+		<g:layoutTitle default="Morya Solutions" />
+	</title>
 	
     <meta charset="utf-8">
     <meta name="viewport"		content="width=device-width, initial-scale=1.0">
@@ -36,13 +38,12 @@
 	<g:render template="/_menu/navbar"/>														
 
 	<!-- Enable to overwrite Header by individual page -->
-	<%--<g:if test="${ pageProperty(name:'page.header') }">
+	<g:if test="${ pageProperty(name:'page.header') }">
    		<g:pageProperty name="page.header" />
 	</g:if>
 	<g:else>
 		<g:render template="/layouts/header"/>														
 	</g:else>
-	--%>
 	
 	<!-- use different templates for HTML structure based on layout (e.g., grid or fluid; Default is grid) -->
 	<g:if test="${session.layout == 'fluid'}">

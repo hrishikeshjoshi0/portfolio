@@ -14,12 +14,17 @@
 	</script>
 	
 	<style type="text/css">
-		#header {
-			height: 300px;
+		#headerCarousel {
+			width: 90%;
+			height: 310px;
+			border:1px dotted #EEE;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 30px;
+			margin-bottom: -10px;
 		}
 		
 		.carousel {
-			margin-top: 10px;
 		}
 		
 		ul.stacked-list { 
@@ -45,56 +50,92 @@
 	<header>
 		<!-- Carousel -->
 		<div id="headerCarousel" class="carousel slide">
-				<!-- Carousel items -->
-				<div class="carousel-inner">
-					<div class="active item">
-						<g:render template="_carousel/carousel1" />
-					</div>
-					<div class="item">
-						<g:render template="_carousel/carousel2" />
-					</div>
-					<div class="item">
-						<g:render template="_carousel/carousel3" />
-					</div>
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="active item">
+					<g:render template="_carousel/carousel1" />
 				</div>
-				<!-- Carousel nav -->
-				<a class="carousel-control left" href="#headerCarousel" data-slide="prev">&lsaquo;</a> 
-				<a class="carousel-control right" href="#headerCarousel" data-slide="next">&rsaquo;</a>
+				<div class="item">
+					<g:render template="_carousel/carousel2" />
+				</div>
+				<%--<div class="item">
+				<g:render template="_carousel/carousel3" />
+			</div>
+		--%>
+			</div>
+			<!-- Carousel nav -->
+			<a class="carousel-control left" href="#headerCarousel"
+				data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
+				href="#headerCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 	</header>
 	
 	<section id="info">
 		<div class="row-fluid">
-	    	<div class="span4">
+	    	<div class="span6">
 		    	<div class="center">
-					<h3>Recent News</h3>
+					<h4>Recent Articles</h4>
 				</div>
-				<p>
+				<div>
 					<!-- Recent News -->
 					<ul class="stacked-list">
 						<li>
 							<a href="#">
-								One
+								<span>Releasing Webstore-v1.0</span>
 							</a>
+							<p>
+								Introducing our new e-commerce platform <em>webstore-v1.0</em> which supports
+								the shopping cart requirements for almost all types of businesses.
+								<a href="#">Read More</a>
+							</p>
 						</li>
 						<li>
 							<a href="#">
-								Two
+								<span>Releasing Webstore-v1.0</span>
 							</a>
-						</li>
-						<li>
-							<a href="#">
-								Three
-							</a>
+							<p>
+								Introducing our new e-commerce platform <em>webstore-v1.0</em> which supports
+								the shopping cart requirements for almost all types of businesses.
+								<a href="#">Read More</a>
+							</p>
 						</li>
 					</ul>
-				</p>
-			</div>
-	    	<div class="span8">
-		    	<div class="center">
-					<h3>Browser support</h3>
 				</div>
-				<p>Bootstrap is tested and supported in major modern browsers like Chrome 14, Safari 5+, Opera 11, Internet Explorer 7, and Firefox 5.</p>
+			</div>
+			
+	    	<div class="span6">
+		    	<div class="center">
+					<h4>Our Portfolio</h4>
+				</div>
+				
+				<ul class="thumbnails">
+				  <li class="span4">
+				    <div class="thumbnail">
+				      <a href="http://rubyandgems.com/" class="thumbnail">
+					     <img src="${resource(dir:'images/home/websites_thumbnails',file:'rubyandgems.png')}" alt="" style="width: 200px;height: 200px;">
+					  </a>
+				      <p>Ruby and Gems</p>
+				    </div>
+				  </li>
+				  
+				  <li class="span4">
+				    <div class="thumbnail">
+				      <a href="http://k9petclinic.com/" class="thumbnail">
+					     <img src="${resource(dir:'images/home/websites_thumbnails',file:'k9petclinic.png')}" alt="" style="width: 200px;height: 200px;">
+					  </a>
+				      <p>K9 Pet Clinic</p>
+				    </div>
+				  </li>
+				  
+				  <li class="span4">
+				    <div class="thumbnail">
+					  <a href="http://guhagar.com/" class="thumbnail">
+					    <img src="${resource(dir:'images/home/websites_thumbnails',file:'guhagar.png')}" alt="" style="width: 200px;height: 200px;">
+					  </a>
+				      <p>Guhagar Tourism</p>
+				    </div>
+				  </li>
+				</ul>
 			</div>
 	    </div>
 	</section>

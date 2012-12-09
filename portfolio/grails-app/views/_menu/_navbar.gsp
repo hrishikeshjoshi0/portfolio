@@ -9,10 +9,11 @@
 			</a>
 
 			<a class="brand" href="${createLink(uri: '/')}">
-				<img class="logo" src="${resource(dir:'kickstart/img',file:'grails.png')}" alt="${meta(name:'app.name')}" />
-				${meta(name:'app.name')}
-				<small> v${meta(name:'app.version')}</small>
-			</a>
+				<img src="${resource(dir:'images',file:'logo.png')}" alt="Morya Solutions"/>
+				<%--<p class='logo'>
+					Morya Solutions
+				</p>
+			--%></a>
 
        		<div class="nav-collapse">
        		
@@ -46,7 +47,9 @@
 					
 					<!-- Navigation Links -->
 					<ul class="nav pull-left">
-						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Services</a></li>
 						<li class="divider"></li>
 						<li><a href="#">About</a></li>
 						<li class="divider"></li>
@@ -54,8 +57,12 @@
 						<li class="divider"></li>
 					</ul>
 					
-					<g:render template="/_menu/info"/>														
-					<g:render template="/_menu/user"/>
+					<%--<g:render template="/_menu/info"/>														
+					--%>
+				
+					<%--<g:render template="/_menu/user"/>
+					--%>
+					
 					<!-- NOTE: the renderDialog for the "Register" modal dialog MUST be placed outside the NavBar (at least for Bootstrap 2.1.1): see bottom of main.gsp -->
 					<%--
 						<g:render template="/_menu/admin"/>														

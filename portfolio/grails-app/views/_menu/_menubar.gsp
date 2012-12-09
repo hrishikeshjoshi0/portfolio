@@ -19,7 +19,10 @@
 	<g:set var="menuposition" value="" />
 </g:else>
 
-
+<g:if test="${	params.controller != null
+			&&	params.controller != ''
+			&&	params.controller != 'home'
+}">
 <div class="${menuposition}">
 	<ul class="${menutype}" data-role="listview" data-split-icon="gear" data-filter="true">
 	
@@ -33,3 +36,4 @@
 		
 	</ul>
 </div>
+</g:if>

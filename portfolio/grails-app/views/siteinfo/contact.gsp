@@ -19,7 +19,9 @@
 	<section id="address">
 	<div class="row">
 		<div class="span4">
-			<h1><g:message code="default.contact.address"/></h1>
+				<h1>
+					Contact Us :
+				</h1>
 				<address>
 					<strong>${meta(name:'app.name')}, Inc.</strong><br>
 					 123 Future Ave<br>
