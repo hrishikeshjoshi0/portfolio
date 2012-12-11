@@ -5,7 +5,7 @@
 <meta name="layout" content="kickstart" />
 <style>
 	#address {
-		margin-top: 20px;
+		padding-top: 20px;
 	}
 </style>
 </head>
@@ -26,21 +26,10 @@
 				<h3>Contact Us :</h3>
 				<address>
 					<strong>Morya Solutions</strong><br> Girgaon<br> Mumbai
-					400002<br> <br>
+					400002
 				</address>
-				<%--
-				<address>
-					<div class="row">
-						<span class="span1">
-							<strong><abbr title="Phone">Phone</abbr></strong>
-						</span>
-						<span class="span3">
-							(123) 456-7890
-						</span>
-					</div>
-				</address>
-				--%>
-				<address>
+				
+				<address style="margin-top: -10px;">
 					<div class="row">
 						<span class="span1"> <strong>Email</strong>
 						</span> <span class="span3"> <a
