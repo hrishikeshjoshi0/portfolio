@@ -51,9 +51,9 @@
 						<li class="divider"></li>
 						<li><a href="#">Services</a></li>
 						<li class="divider"></li>
-						<li><a href="#">About</a></li>
+						<li><a href="${createLink(uri: '/about')}">About</a></li>
 						<li class="divider"></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="${createLink(uri: '/contact')}">Contact</a></li>
 						<li class="divider"></li>
 					</ul>
 					
