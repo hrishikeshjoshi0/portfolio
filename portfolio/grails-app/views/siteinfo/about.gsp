@@ -1,7 +1,9 @@
 <html>
 
 <head>
-	<title><g:message code="default.about.title" args="[meta(name:'app.name')]"/></title>
+	<title>
+		About | Morya Solutions
+	</title>
 	<meta name="layout" content="kickstart" />
 </head>
 

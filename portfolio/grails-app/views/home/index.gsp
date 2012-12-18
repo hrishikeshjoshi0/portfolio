@@ -2,8 +2,7 @@
 
 <head>
 	<title>
-		<g:message code="default.welcome.title" args="[meta(name:'app.name')]"/>
-		 
+		Home | Morya Solutions
 	</title>
 	<meta name="layout" content="kickstart" />
 	
@@ -82,16 +81,6 @@
 				<div>
 					<!-- Recent News -->
 					<ul class="stacked-list">
-						<li>
-							<a href="#">
-								<span>Releasing Webstore-v1.0</span>
-							</a>
-							<p>
-								Introducing our new e-commerce platform <em>webstore-v1.0</em> which supports
-								the shopping cart requirements for almost all types of businesses.
-								<a href="#">Read More</a>
-							</p>
-						</li>
 						<li>
 							<a href="#">
 								<span>Releasing Webstore-v1.0</span>

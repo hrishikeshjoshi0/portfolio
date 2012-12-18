@@ -10,6 +10,7 @@ class UrlMappings {
 		"/blog"			(view:"/siteinfo/blog")
 		"/systeminfo"	(view:"/siteinfo/systeminfo")
 		"/contact"		(view:"/siteinfo/contact")
+		"/portfolio"	(view:"/siteinfo/portfolio")
 		"/terms"		(view:"/siteinfo/terms")
 		"/imprint"		(view:"/siteinfo/imprint")
 		

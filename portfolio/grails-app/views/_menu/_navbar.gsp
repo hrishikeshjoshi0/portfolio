@@ -9,7 +9,7 @@
 			</a>
 
 			<a class="brand" href="${createLink(uri: '/')}">
-				<img src="${resource(dir:'images',file:'logo.png')}" alt="Morya Solutions"/>
+				<img src="${resource(dir:'images',file:'logo.png')}" alt="Morya Solutions" style="height:40px;"/>
 				<%--<p class='logo'>
 					Morya Solutions
 				</p>
@@ -47,13 +47,11 @@
 					
 					<!-- Navigation Links -->
 					<ul class="nav pull-left">
-						<li><a href="#">Portfolio</a></li>
+						<li><a href="${createLink(uri: '/portfolio')}">Portfolio</a></li>
 						<li class="divider"></li>
-						<li><a href="#">Services</a></li>
+						<%--<li><a href="${createLink(uri: '/about')}">About</a></li>
 						<li class="divider"></li>
-						<li><a href="${createLink(uri: '/about')}">About</a></li>
-						<li class="divider"></li>
-						<li><a href="${createLink(uri: '/contact')}">Contact</a></li>
+						--%><li><a href="${createLink(uri: '/contact')}">Contact</a></li>
 						<li class="divider"></li>
 					</ul>
 					

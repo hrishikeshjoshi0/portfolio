@@ -18,6 +18,35 @@
     <link rel="apple-touch-icon"	href="assets/ico/apple-touch-icon-72x72.png"	sizes="72x72">
     <link rel="apple-touch-icon"	href="assets/ico/apple-touch-icon-114x114.png"	sizes="114x114">
 	
+	<style type="text/css">
+		/* styles for layout */
+		html,body
+		{
+		    height:100%;
+		}
+		
+		#wrap
+		{
+		  min-height: 100%;  
+		}
+		
+		#main
+		{
+		    overflow:auto;
+		    padding-bottom:200px; /* this needs to be bigger than footer height*/
+		}
+		
+		.footer 
+		{
+		    position: relative;
+			margin-top: -180px; /* negative value of footer height */
+			height: 180px;
+			clear:both;
+		    padding-top:20px;
+		    color:#fff;
+		} 
+	</style>
+	
 	<%-- Manual switch for the skin can be found in /view/_menu/_config.gsp --%>
 	<r:require modules="jquery"/>
 	<r:require modules="${session.skin ? session.skin : 'bootstrap'}"/>
@@ -45,14 +74,23 @@
 		<g:render template="/layouts/header"/>														
 	</g:else>
 	
-	<!-- use different templates for HTML structure based on layout (e.g., grid or fluid; Default is grid) -->
-	<g:if test="${session.layout == 'fluid'}">
-		<g:render template="/layouts/content_${session.layout}"/>														
-	</g:if>
-	<g:else>
-		<g:render template="/layouts/content_grid"/>														
-	</g:else>
-
+	<!-- Wrap for sticky footer -->
+	<div id="wrap">
+		<div id="main" class="container clear-top">
+		    <div class="row">
+		        <div class="span12">
+		           <!-- use different templates for HTML structure based on layout (e.g., grid or fluid; Default is grid) -->
+					<g:if test="${session.layout == 'fluid'}">
+						<g:render template="/layouts/content_${session.layout}"/>														
+					</g:if>
+					<g:else>
+						<g:render template="/layouts/content_grid"/>														
+					</g:else>   
+		        </div>
+		    </div>
+		</div>
+	</div>
+	
 	<!-- Enable to overwrite Footer by individual page -->
 	<g:if test="${ pageProperty(name:'page.footer') }">
 	    <g:pageProperty name="page.footer" />
